@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="front-end mentor stats preview card component"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/style.css" />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+    </head>
+    <body
+        class="w-screen h-screen flex flex-col justify-center items-center bg-very-dark-blue"
+    >
+        <main
+            class="w-[330px] flex flex-col justify-center items-center text-center bg-dark-desaturated-blue rounded-xl overflow-hidden my-auto z-10 xl:w-[1110px] xl:flex-row-reverse"
+        >
+            <div class="shrink-0 relative">
+                <img
+                    class="h-auto w-full xl:hidden"
+                    src="./images/image-header-mobile.jpg"
+                    alt="women working on their notebooks in a comfy environment"
+                />
+                <img
+                    class="h-auto w-full hidden xl:block"
+                    src="./images/image-header-desktop.jpg"
+                    alt="women working on their notebooks in a comfy environment"
+                />
+                <div
+                    class="absolute inset-0 bg-soft-violet opacity-50 contrast-200 brightness-[0.50] saturate-200 hue-rotate-[10deg]"
+                ></div>
+            </div>
+            <section
+                class="font-inter text-white py-10 px-8 xl:p-16 xl:text-left xl:h-full xl:flex xl:flex-col xl:justify-between xl:mr-16"
+            >
+                <section class="xl:w-full texto">
+                    <h1
+                        class="font-bold text-[28px] leading-8 mb-4 xl:text-4xl"
+                    >
+                        Get <span class="text-soft-violet">insights</span> that
+                        help your business grow.
+                    </h1>
+                    <p
+                        class="font-lexend-deca font-normal text-[15px] leading-[1.6] mb-8 lightly-transparent-white"
+                    >
+                        Discover the benefits of data analytics and make better
+                        decisions regarding revenue, customer experience, and
+                        overall efficiency.
+                    </p>
+                </section>
+                <section
+                    class="flex flex-col gap-6 xl:flex-row xl:justify-between stats"
+                >
+                    <div>
+                        <p class="font-inter text-2xl font-bold">10k+</p>
+                        <p
+                            class="mt-2 tracking-widest text-xs font-lexend-deca slightly-transparent-white"
+                        >
+                            COMPANIES
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-inter text-2xl font-bold">314</p>
+                        <p
+                            class="mt-2 tracking-widest text-xs font-lexend-deca slightly-transparent-white"
+                        >
+                            TEMPLATES
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-inter text-2xl font-bold">12M+</p>
+                        <p
+                            class="mt-2 tracking-widest text-xs font-lexend-deca slightly-transparent-white"
+                        >
+                            QUERIES
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="w-full text-center mb-2 z-0 text-white">
+            Challenge by
+            <a
+                class="text-soft-violet hover:text-soft-violet hover:brightness-150 duration-300"
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a
+                class="text-soft-violet hover:text-soft-violet hover:brightness-150 duration-300"
+                href="https://github.com/M-its"
+                target="_blank"
+                >Mitsrael Souza</a
+            >.
+        </footer>
+    </body>
+</html>
